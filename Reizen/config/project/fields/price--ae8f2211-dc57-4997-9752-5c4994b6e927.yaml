@@ -1,0 +1,20 @@
+columnSuffix: fqwtihpo
+contentColumnType: integer(10)
+fieldGroup: f36b1a5f-e3fc-43b7-97f9-ff6764a5cf7f # Common
+handle: price
+instructions: null
+name: Price
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: EUR
+  previewFormat: currency
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Flight Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+</head>
+<style>
+    body { 
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        margin: 0px;
+        background-image: url("https://ak-d.tripcdn.com/images/05E3s12000cmarxu50A1C.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 35px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+  height: 60px;
+  text-align: center;
+}
+
+header #top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img{
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0; 
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  width: 60%;
+  text-align: center;
+}
+
+#menu-ham {
+    display: none;
+}
+
+#container {
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: white;
+  margin-top: -30px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#flex_flight{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flight-container {
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-direction: column; 
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.flight-container h2{
+  margin: 10px 0;
+}
+
+
+.flight-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.flight-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.flight-info {
+  padding: 10px 20px;
+}
+
+
+.info-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#price {
+  font-weight: 600;
+}
+
+
+#flight-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+#filter-container form {
+  display: flex;
+  gap: 20px;
+}
+
+#filter-container form input[type="submit"] {
+  background-color: #144ddd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#filter-container form select {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media screen and (max-width: 900px) {
+  #flex_flight{
+    justify-content: space-evenly;
+  }
+}
+</style>
+
+<body>
+
+<script>
+
+</script>
+
+<header>
+  <div id="top">
+  <div class="logo"><a href="https://reizen.ddev.site/"><img src="Image/Logo-travel.svg"></a></div>
+  <div class="nav">
+    <nav>
+      <ul>
+        <li><a href="#">Flights</a></li>
+        <li><a href="Accommodations.twig">Accommodations</a></li>
+      </ul>
+    </nav>
+          <img src="Image/Menu.svg" width="30px" height="30px" id="menu-ham" onclick="show()">
+  </div>
+  </div>
+</header>
+<div id="container">
+<div id="filter-container">
+<form action="Flights.twig" method="get" id="form">
+  <select id="sort" name="sort">
+    <option value="default">Sort By</option>
+    <option value="desc">High To Low</option>
+    <option value="asc">Low To High</option>
+  </select>
+  <input type="submit" value="Filter">
+</form>
+</div>
+
+<div id="flex_flight">
+{% set sortOption = craft.app.request.getQueryParam('sort') ?? 'asc' %}
+    {% set entries = craft.entries.section('flight').orderBy('price ' ~ sortOption).all() %}
+    {% for entry in entries %}
+    {% set entryImage = entry.countryimage.one() %}
+    <a href="/flight-details?id={{ entry.id }}">
+<div class="flight-container">
+  <div class="flight-image">
+    <img id="pics" src="{{ entryImage.url }}" alt="{{ entry.title }}">
+  </div>
+  <div class="flight-info">
+    <h2>{{entry.countryName}}</h2>
+      <div class="info-flex">
+    <p id="price">€ {{entry.price}}</p>
+    <p> <span class="time">{{entry.travelTime}}</span></p>
+    </div>
+  </div>
+</div>
+</a>
+{% endfor %}
+</div>
+
+
+<script>
+const timeElements = document.querySelectorAll('.time');
+
+timeElements.forEach(element => {
+  const afgerondeTime = parseFloat(element.textContent); 
+  let nieuweText = '';
+
+  // Als het meer dan 1 uur is, afronden naar het dichtstbijzijnde uur
+  if (afgerondeTime >= 1) {
+    const hours = Math.round(afgerondeTime); // Afronden naar het dichtstbijzijnde uur
+    nieuweText += `${hours} uur`; // Tijd in uren weergeven
+   
+  }  // Als het minder dan 1 uur is, weergeven in minuten
+  else {
+    const minutes = Math.round(afgerondeTime * 60); // Omzetten naar minuten
+    nieuweText = `${minutes} minuten`; // Tijd in minuten weergeven
+  }
+
+  // Vervangen van de tekstinhoud van het element met de opgemaakte tijd
+  element.textContent = nieuweText;
+});
+</script>
+
+
+</body>
+
+</html>

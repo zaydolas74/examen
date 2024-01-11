@@ -1,0 +1,72 @@
+dateModified: 1704911965
+email:
+  fromEmail: r0934607@student.thomasmore.be
+  fromName: TravelWorld
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: false
+    name: Images
+    settings:
+      path: 'C:/Users/zaydm/Desktop/XD/Reizen/templates/Images'
+    type: craft\fs\Local
+    url: null
+  imagescountry:
+    hasUrls: true
+    name: ImagesCountry
+    settings:
+      path: '@webroot/Images/uploads/Country'
+    type: craft\fs\Local
+    url: '@web//Images/uploads/Country'
+  imageshotel:
+    hasUrls: true
+    name: ImagesHotel
+    settings:
+      path: '@webroot/Images/uploads/Hotel'
+    type: craft\fs\Local
+    url: '@web/Images/uploads/Hotel'
+meta:
+  __names__:
+    2c1e28de-9576-4242-872b-f1608411892b: 'Travel Time' # Travel Time
+    02cef0f9-32c1-4dba-9f1f-0fafb8a60f75: Address # Address
+    4ba010df-b4f4-4a14-a2d5-9f66bfcc7651: Accommodations # Accommodations
+    7bee0406-9b70-4977-8b39-9c094854a3f9: Company # Company
+    7cc7707d-18a9-4ae2-8a88-9ebfd1c23e75: TravelWorld # TravelWorld
+    20b3d915-0281-4b85-be29-5788e1fd9432: 'Hotel Name' # Hotel Name
+    196f3b18-cd9c-4ae2-b2da-a637a5e3196c: HotelImage # HotelImage
+    542b89ef-e538-4c1e-bcf1-8fcc8fbf4021: Description # Description
+    6608d5ec-6fe4-4aea-bcfe-491248fd8f7b: 'Contact details' # Contact details
+    7822ce2c-a120-47bd-b482-a568ddeec22b: 'City Name' # City Name
+    2296162c-a877-479c-877f-854e83f6a787: Default # Default
+    a50b844c-e943-4adc-bf69-c908f595d01f: 'Flight Name' # Flight Name
+    aa396fec-9cea-4115-a927-590412601772: ImagesHotel # ImagesHotel
+    ae8f2211-dc57-4997-9752-5c4994b6e927: Price # Price
+    c1fdb786-49d5-48da-acc3-cb686e00377b: Default # Default
+    c6eeba19-4e5f-492a-8057-23bfad92b308: image # image
+    c499d0b5-9d5b-49f1-859e-f00ac425dea3: ImagesCountry # ImagesCountry
+    cba79a56-981b-4bc2-9111-ece787331ac6: ' Flight' #  Flight
+    ce41a1a9-8ba5-4571-a349-6abfd6a6f5d3: 'Country Name' # Country Name
+    d20bcdd3-73b6-42da-8312-738b430f16a3: CountryImage # CountryImage
+    e6492913-490a-490b-970f-85a87f74ad3f: TravelWorld # TravelWorld
+    f36b1a5f-e3fc-43b7-97f9-ff6764a5cf7f: Common # Common
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  social-share:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: TravelWorld
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

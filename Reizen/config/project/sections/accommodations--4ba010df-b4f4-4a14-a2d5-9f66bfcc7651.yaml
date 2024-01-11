@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: accommodations
+name: Accommodations
+propagationMethod: all
+siteSettings:
+  e6492913-490a-490b-970f-85a87f74ad3f: # TravelWorld
+    enabledByDefault: true
+    hasUrls: true
+    template: accommodations/_entry
+    uriFormat: 'accommodations/{slug}'
+type: channel

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: flight
+name: ' Flight'
+propagationMethod: all
+siteSettings:
+  e6492913-490a-490b-970f-85a87f74ad3f: # TravelWorld
+    enabledByDefault: true
+    hasUrls: true
+    template: bestemming/_entry
+    uriFormat: 'bestemming/{slug}'
+type: channel

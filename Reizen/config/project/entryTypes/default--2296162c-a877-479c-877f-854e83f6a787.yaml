@@ -1,0 +1,155 @@
+fieldLayouts:
+  aed93b8e-bbfb-4261-b6d5-9e2b4191998d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 937a0840-0779-4656-96aa-bdfcdca05d94
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a50b844c-e943-4adc-bf69-c908f595d01f # Flight Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6f928aa-4772-43ee-834c-7d7e6d957d59
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ce41a1a9-8ba5-4571-a349-6abfd6a6f5d3 # Country Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3c615af-52b5-44cc-b8d5-50af3e34389b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7822ce2c-a120-47bd-b482-a568ddeec22b # City Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55105a65-f7b6-4058-8995-9db955327e2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7bee0406-9b70-4977-8b39-9c094854a3f9 # Company
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c807721c-0765-4f3c-b83b-230e9ca9f431
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 542b89ef-e538-4c1e-bcf1-8fcc8fbf4021 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 660ed758-4cab-4d29-99c9-ad2179a1594f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d20bcdd3-73b6-42da-8312-738b430f16a3 # CountryImage
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3162f4b-967e-4981-9806-416d1b6ba156
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c6eeba19-4e5f-492a-8057-23bfad92b308 # image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e79686c8-da99-4524-9747-9b5b1bc4e9a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae8f2211-dc57-4997-9752-5c4994b6e927 # Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29054447-e34c-4eaf-962d-d179715bb0a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2c1e28de-9576-4242-872b-f1608411892b # Travel Time
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49ad3dba-c6cc-461e-b29a-261a7ab2d25a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ec52b36b-568a-45c2-8a8d-fd52ee5b2fa5
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: cba79a56-981b-4bc2-9111-ece787331ac6 #  Flight
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

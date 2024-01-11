@@ -1,0 +1,143 @@
+fieldLayouts:
+  2564134e-4cc5-4f30-8993-ae603aaf0fb8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fb280274-edbb-48ef-b5dc-081276c37775
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 20b3d915-0281-4b85-be29-5788e1fd9432 # Hotel Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 299ba3c3-b08c-4cd9-9964-2dac2f38bfaf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 542b89ef-e538-4c1e-bcf1-8fcc8fbf4021 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81461078-c407-4a14-b98b-75ad6bd8c4b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6608d5ec-6fe4-4aea-bcfe-491248fd8f7b # Contact details
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40d2d7db-ae43-46ca-97c0-77b56c249c35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae8f2211-dc57-4997-9752-5c4994b6e927 # Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ba2b085-66f4-4f59-a3d7-a9bb902dce95
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 196f3b18-cd9c-4ae2-b2da-a637a5e3196c # HotelImage
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b367f886-f1e7-4269-a085-f3fe7a38a7cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ce41a1a9-8ba5-4571-a349-6abfd6a6f5d3 # Country Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f890811-8f49-4b8f-bab1-2c1dcc4277a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7822ce2c-a120-47bd-b482-a568ddeec22b # City Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cc26af6-503e-4d47-8df7-b61692c568fc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 02cef0f9-32c1-4dba-9f1f-0fafb8a60f75 # Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21894777-12d7-4bba-b9b8-cdb3cb3321c0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 30525c58-3896-4283-82b7-23ed27e67e83
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 4ba010df-b4f4-4a14-a2d5-9f66bfcc7651 # Accommodations
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

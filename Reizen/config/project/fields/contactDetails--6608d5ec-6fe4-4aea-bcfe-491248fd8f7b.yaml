@@ -1,0 +1,19 @@
+columnSuffix: rwijekhb
+contentColumnType: text
+fieldGroup: f36b1a5f-e3fc-43b7-97f9-ff6764a5cf7f # Common
+handle: contactDetails
+instructions: null
+name: 'Contact details'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
